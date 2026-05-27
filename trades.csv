@@ -1,0 +1,4 @@
+trade_id,book,symbol,product_type,option_type,quantity,strike,expiry,pricing_model
+T001,EQD,AAPL,european_option,call,100,105,2027-05-20,black_scholes
+T002,EQD,AAPL,european_option,put,50,95,2027-05-20,black_scholes
+T003,EQD,MSFT,european_option,call,75,420,2027-05-20,black_scholes
