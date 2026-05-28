@@ -91,7 +91,7 @@ export async function scenarioRisk(payload: ScenarioRequest): Promise<ScenarioRe
 
 export async function pingBackend(): Promise<boolean> {
   try {
-    await equiriskClient.get("/", { timeout: 3000 });
+    await equiriskClient.get("/health", { timeout: 3000 });
     return true;
   } catch (e) {
     const ax = e as AxiosError;
