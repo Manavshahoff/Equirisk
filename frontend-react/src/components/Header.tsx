@@ -38,7 +38,7 @@ export function Header() {
   // }, [check]);
 
   useEffect(() => {
-      setStatus("offline");
+      setStatus("online");
   }, []);
 
   return (
