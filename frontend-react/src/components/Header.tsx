@@ -25,17 +25,21 @@ export function Header() {
     }
   }, []);
 
+  // useEffect(() => {
+  //   check();
+
+  //   const id = window.setInterval(() => {
+  //     check();
+  //   }, 60000);
+
+  //   return () => {
+  //     window.clearInterval(id);
+  //   };
+  // }, [check]);
+
   useEffect(() => {
-    check();
-
-    const id = window.setInterval(() => {
-      check();
-    }, 60000);
-
-    return () => {
-      window.clearInterval(id);
-    };
-  }, [check]);
+      setStatus("offline");
+  }, []);
 
   return (
     <header className="h-16 border-b border-border bg-card/40 backdrop-blur px-6 flex items-center justify-between">
